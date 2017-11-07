@@ -1,8 +1,6 @@
 const express = require("express");
 const cors = require("cors");
 
-const app = express();
-app.use(cors());
 
 var characters = [{
   id: 1,
@@ -38,6 +36,9 @@ function charByID(char, id) {
     }
   }
 }
+
+const app = express();
+app.use(cors());
 
 app.get("/", function (req, res) {
   response.json(characters);
