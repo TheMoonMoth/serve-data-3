@@ -40,16 +40,17 @@ function charByID(char, id) {
 const app = express();
 app.use(cors());
 
-app.get("/", function (req, res) {
+app.get("/", function (request, response) {
   response.json(characters);
 });
 
-app.get("/:id", function (req, res) {
+app.get("/:id", function (request, response) {
   var char = charById(characters, request.params.id);
   if (!charID) {
     response.status(404);
     response.json({error: {message: "No character found with that ID."}});
   }
+  response.json(char);
 });
 
 app.listen(process.env.PORT || 3000);
