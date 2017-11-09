@@ -1,6 +1,6 @@
 ##Database URL
 
-https://github.com/TheMoonMoth/serve-data-3.git
+https://server-version3-deployment.herokuapp.com/
 
 ## Instructions
 
@@ -8,8 +8,8 @@ Using the included `.csv` dataset:
 
 * Build a light web server in the `app` folder of this repo
 * Return the entire collection as JSON when you `GET` the index (`/`) of the server
-* Return an individual item as JSON when you `GET` the id of that item (eg., `/4`) 
-* Return an error message as JSON when you `GET` the id of an item that doesn't exist (eg., `/100`, `/forty-five`, etc.) 
+* Return an individual item as JSON when you `GET` the id of that item (eg., `/4`)
+* Return an error message as JSON when you `GET` the id of an item that doesn't exist (eg., `/100`, `/forty-five`, etc.)
 * Deploy your server to the internet
 * Test your API with a headless browser like Postman
 
